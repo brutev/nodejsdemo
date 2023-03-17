@@ -15,17 +15,7 @@ const getUsers = (request, response) => {
       response.status(200).json(results.rows)
     })
   }
-// const getEmployeeDetails = (request,response)=> {
-//   pool.query('SELECT * FROM EMPLOYEE'
-//   // EMP.empid,EMP.empname ,DEPT.deptname FROM EMPLOYEE EMP LEFT JOIN DEPARTMENT DEPT ON EMP.deptid=DEPT.deptid
-//   ,(error,results)=>{
-//     if(error){
-//       throw error
-//     }
-//     console.log("sdbvshv");
-//     response.status(200).json(results.rows)
-//   })
-// }
+
 
   const getUserById = (request, response) => {
     const id = parseInt(request.params.id)
@@ -84,5 +74,4 @@ const getUsers = (request, response) => {
     createUser,
     updateUser,
     deleteUser,
-    getEmployeeDetails
   }
